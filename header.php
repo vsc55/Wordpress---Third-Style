@@ -33,9 +33,9 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'thirdstyle' ), max( $paged, $page ) );
 
 	?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="profile" href="<?php echo (empty($_SERVER["HTTPS"]) == false ? 'https' : 'http'); ?>://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css'>
+<link href='<?php echo (empty($_SERVER["HTTPS"]) == false ? 'https' : 'http'); ?>://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css'>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
