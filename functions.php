@@ -45,7 +45,7 @@
  * is designed for, generally via the style.css stylesheet.
  */
 if ( ! isset( $content_width ) )
-	$content_width = 640;
+	$content_width = 1024;
 
 /** Tell WordPress to run thirdstyle_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'thirdstyle_setup' );
@@ -107,11 +107,11 @@ function thirdstyle_setup() {
 
 	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
 	// Add a filter to thirdstyle_header_image_width and thirdstyle_header_image_height to change these values.
-	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'thirdstyle_header_image_width', 940 ) );
+	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'thirdstyle_header_image_width', 1024 ) );
 	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'thirdstyle_header_image_height', 198 ) );
 
 	// We'll be using post thumbnails for custom header images on posts and pages.
-	// We want them to be 940 pixels wide by 198 pixels tall.
+	// We want them to be 1024 pixels wide by 198 pixels tall.
 	// Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
 	set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
 

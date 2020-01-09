@@ -5,7 +5,7 @@ Theme Name: Third Style
 Used to style the TinyMCE editor.
 */
 html .mceContentBody {
-	max-width:640px;
+	max-width:1024px;
 }
 * {
         font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
@@ -242,7 +242,7 @@ tr td {
 
 img {
 	margin: 0;
-	max-width: 640px;
+	max-width: 1024px;
 }
 .alignleft,
 img.alignleft {
